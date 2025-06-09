@@ -103,39 +103,29 @@ select[multiple] {
 }
 
 
-/* -----------------------------
-   Responsive improvements
-------------------------------*/
-@media (max-width: 600px){
-  .container{
-    padding: 30px 15px;
-  }
-  .botao{
-    width: 100%;
-  }
-  .checkboxes{
-    column-count: 1;
-  }
-}
-
-@media (min-width: 601px){
-  .checkboxes{
-    column-count: 2;
-  }
-}
-
-/* Responsividade adicional para celulares */
+/* Ajustes específicos para botões em dispositivos móveis */
 @media (max-width: 600px) {
+    .botoes {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .botao {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+    }
+
     nav {
         flex-direction: column;
         align-items: center;
     }
 
     nav a {
-        display: block;
-        margin: 5px 0;
-        font-size: 16px;
-        padding: 10px;
+        font-size: 14px;
+        padding: 8px 10px;
     }
 
     .logo img {
